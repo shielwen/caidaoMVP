@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@color/zon"
+            android:text="评论"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/alert_edittext"
+                android:gravity="top"
+                android:maxLength="30"
+                android:hint="在此输入..."
+                android:paddingTop = "5dp"
+                android:maxLines="6"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+            <View
+                android:layout_gravity="bottom"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"></View>
+        </FrameLayout>
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/alert_button"
+        android:background="@color/zon"
+        android:text="发  布"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+</LinearLayout>

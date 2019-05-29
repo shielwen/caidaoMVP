@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.caidaomvp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivityView.LoginView" />
+        <activity android:name=".ActivityView.RegisterView" />
+        <activity android:name=".ActivityView.Retrievepassword" />
+        <activity android:name=".ActivityView.HomeView"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            />
+        <activity android:name=".Demo.text" />
+        <activity android:name=".Demo.test_WaveSwipeRefreshLayout" />
+        <activity android:name=".ActivityView.SearchView" />
+        <activity android:name=".ActivityView.VideoViews"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            />
+        <activity android:name=".Demo.testToast"></activity>
+    </application>
+
+</manifest>

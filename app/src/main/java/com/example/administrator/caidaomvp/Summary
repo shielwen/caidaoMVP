@@ -1,0 +1,20 @@
+MVC模式
+    vc都在activity中，比较冗杂
+
+MVP模式
+    mvp的核心就是把activity和fragment的业务分离。
+model:实体
+view:UI逻辑
+    1.initData()            //初始化数据
+    2.Result(String code)   //弹出Toast
+    3.initAdpter()          //初始化适配器
+presenter:事务逻辑+网络请求
+    1.Presenter(View view)  //构造方法传入view就可以操作view中的方法
+    2.initData()            //初始化数据
+    3.HttpUtil.sendRequest(String address,new CallBack());  //网络请求
+
+RecyclerView使用
+    1.布局
+    2.适配器 五步：1.内部类 2.构造方法 3.4.5.继承方法
+    3.设置适配器     1.获取焦点 2.添加管理器 3.设置适配器
+
