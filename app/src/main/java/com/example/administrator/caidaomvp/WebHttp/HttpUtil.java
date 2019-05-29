@@ -44,7 +44,7 @@ public class HttpUtil {
                 NameModel nameModel = new NameModel();
                 nameModel.setName(name);
                 list.add(nameModel);
-            }
+            }//
             return list;
 
         } catch (Exception e) {
